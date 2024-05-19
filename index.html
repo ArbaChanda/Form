@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="src/output.css">
+
+</head>
+
+<body class="m-0 p-0 bg-custom-lightGreen flex justify-center items-center h-[100vh] w-[100vw]">
+
+
+  <form class="form h-auto w-[550px] bg-white rounded-xl p-[25px]">
+    <h1 class="text-2xl font-bold ">Contact Us</h1>
+
+    <!-- Names -->
+
+    <div class="names flex justify-between items-stretch w-full mt-6 relative gap-3">
+
+      <!-- firstName -->
+      <div class="firstName flex flex-col items-start justify-start w-[calc(50%-10px)]">
+        <h2 class="text-custom-darkGrey text-xs font-bold">First Name <span class="text-custom-Green"> *</span></h2>
+        <input type="text" class="border h-[35px] w-full rounded-[5px] mt-[10px] border-custom-darkGrey">
+      </div>
+
+      <!-- lastName -->
+      <div class="lastName flex flex-col items-start justify-start w-[calc(50%-10px)]">
+        <h2 class="text-custom-darkGrey text-xs font-bold">Last Name <span class="text-custom-Green"> *</span></h2>
+        <input type="text" class="border h-[35px] w-full rounded-[5px] mt-[10px] border-custom-darkGrey">
+      </div>
+
+    </div>
+
+    <!-- Email -->
+    <div class="lastName flex flex-col items-start justify-start mt-[20px]">
+      <h2 class="text-custom-darkGrey text-xs font-bold">Email <span class="text-custom-Green"> *</span></h2>
+      <input type="text" class="border h-[35px] w-full rounded-[5px] mt-[10px] border-custom-darkGrey">
+    </div>
+
+    <!-- Query Type  -->
+    <div class="flex flex-col items-start justify-start mt-[20px]">
+      <h2 class="text-custom-darkGrey text-xs font-bold">Query Type <span class="text-custom-Green"> *</span></h2>
+
+      <!-- radio  -->
+      <div class="radios flex justify-between items-stretch w-[100%] mt-2 relative gap-3">
+
+        <div class="radio1 border h-[35px] rounded-[5px] mt-[10px]  w-[calc(50%-10px)] border-custom-darkGrey flex justify-start items-center gap-2 p-5 font-semibold">
+
+          <input type="radio" name="Query Type" value="General Enquiry">
+           <h3 class="text-custom-darkGrey text-xs">General Enquiry</h3>
+           
+        </div>
+
+        <div class="radio1 border h-[35px] rounded-[5px] mt-[10px]  w-[calc(50%-10px)] border-custom-darkGrey flex justify-start items-center gap-2 p-5 font-semibold">
+
+          <input type="radio" name="Query Type" value="Support Request">
+           <h3 class="text-custom-darkGrey text-xs">Support Request</h3>
+           
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="message flex flex-col mt-4">
+      <h2 class="text-custom-darkGrey text-xs font-bold">Message <span class="text-custom-Green"> *</span></h2>
+      <input type="text" class="border h-[70px] w-full rounded-[5px] mt-[10px] border-custom-darkGrey">
+    </div>
+
+    <!-- Consent confirmation -->
+    <div class="consent flex mt-4">
+      <input type="radio" class="appearance-none h-4 w-4 border border-custom-darkGrey rounded-sm  checked:bg-custom-Green text-white">
+      <p class="text-custom-darkGrey text-xs font-bold ml-2">I consent to being contacted by the team<span class="text-custom-Green"> *</span></p>
+    </div>
+
+    <!-- Submit Button  -->
+
+    <button class="btn w-full h-[40px] rounded-[8px] mt-4 flex justify-center items-center bg-custom-Green text-white font-semibold text-sm">Submit</button>
+  
+    </div>
+    
+
+  </form>
+
+
+
+  <!-- Contact Usk
+
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
